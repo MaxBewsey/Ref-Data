@@ -1,0 +1,1387 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='RefereeStrictnessAcrosstheBig5Leagues' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Cleaned Referee Data' inline='true' name='federated.0ey7qp108koo3210u172y19m2q1f' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Cleaned Referee Data' name='textscan.1nd7ejq1k6j6oc178ss8c069jk79'>
+            <connection class='textscan' directory='C:/Users/mbews/Desktop/Python - Jupyter - Real/Codecademy/Courses/Learn Python for Data Science/Portfolio Project' filename='Cleaned Referee Data.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1nd7ejq1k6j6oc178ss8c069jk79' name='Cleaned Referee Data.csv' table='[Cleaned Referee Data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='index' ordinal='1' />
+            <column datatype='string' name='Referee' ordinal='2' />
+            <column datatype='string' name='League' ordinal='3' />
+            <column datatype='string' name='Season' ordinal='4' />
+            <column datatype='integer' name='Number of Matches' ordinal='5' />
+            <column datatype='integer' name='Yellows' ordinal='6' />
+            <column datatype='integer' name='Double Yellows' ordinal='7' />
+            <column datatype='integer' name='Reds' ordinal='8' />
+            <column datatype='integer' name='Total Booking Points' ordinal='9' />
+            <column datatype='real' name='Booking Points per Match' ordinal='10' />
+            <column datatype='real' name='Strictness%' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Cleaned Referee Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Cleaned Referee Data.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Cleaned Referee Data.csv_95C3ACFC6AF041AE9AF3122B19436D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[index]</local-name>
+            <parent-name>[Cleaned Referee Data.csv]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Cleaned Referee Data.csv_95C3ACFC6AF041AE9AF3122B19436D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Referee</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Referee]</local-name>
+            <parent-name>[Cleaned Referee Data.csv]</parent-name>
+            <remote-alias>Referee</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Cleaned Referee Data.csv_95C3ACFC6AF041AE9AF3122B19436D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>League</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[League]</local-name>
+            <parent-name>[Cleaned Referee Data.csv]</parent-name>
+            <remote-alias>League</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Cleaned Referee Data.csv_95C3ACFC6AF041AE9AF3122B19436D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Season]</local-name>
+            <parent-name>[Cleaned Referee Data.csv]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Cleaned Referee Data.csv_95C3ACFC6AF041AE9AF3122B19436D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Matches</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Matches]</local-name>
+            <parent-name>[Cleaned Referee Data.csv]</parent-name>
+            <remote-alias>Number of Matches</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Cleaned Referee Data.csv_95C3ACFC6AF041AE9AF3122B19436D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Yellows</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Yellows]</local-name>
+            <parent-name>[Cleaned Referee Data.csv]</parent-name>
+            <remote-alias>Yellows</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Cleaned Referee Data.csv_95C3ACFC6AF041AE9AF3122B19436D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Double Yellows</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Double Yellows]</local-name>
+            <parent-name>[Cleaned Referee Data.csv]</parent-name>
+            <remote-alias>Double Yellows</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Cleaned Referee Data.csv_95C3ACFC6AF041AE9AF3122B19436D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reds</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Reds]</local-name>
+            <parent-name>[Cleaned Referee Data.csv]</parent-name>
+            <remote-alias>Reds</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Cleaned Referee Data.csv_95C3ACFC6AF041AE9AF3122B19436D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Booking Points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Booking Points]</local-name>
+            <parent-name>[Cleaned Referee Data.csv]</parent-name>
+            <remote-alias>Total Booking Points</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Cleaned Referee Data.csv_95C3ACFC6AF041AE9AF3122B19436D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Booking Points per Match</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Booking Points per Match]</local-name>
+            <parent-name>[Cleaned Referee Data.csv]</parent-name>
+            <remote-alias>Booking Points per Match</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Cleaned Referee Data.csv_95C3ACFC6AF041AE9AF3122B19436D59]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Strictness%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Strictness%]</local-name>
+            <parent-name>[Cleaned Referee Data.csv]</parent-name>
+            <remote-alias>Strictness%</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Cleaned Referee Data.csv_95C3ACFC6AF041AE9AF3122B19436D59]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' hidden='true' name='[F1]' role='measure' type='quantitative' />
+      <column datatype='string' name='[League]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+      <column caption='Cleaned Referee Data.csv' datatype='table' name='[__tableau_internal_object_id__].[Cleaned Referee Data.csv_95C3ACFC6AF041AE9AF3122B19436D59]' role='measure' type='quantitative' />
+      <column caption='Index' datatype='integer' hidden='true' name='[index]' role='measure' type='quantitative' />
+      <column-instance column='[League]' derivation='None' name='[none:League:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/mbews/AppData/Local/Temp/TableauTemp/#TableauTemp_1vt1ots1marvmz1axx5360meaap7.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/14/2025 06:08:57 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Referee</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Referee]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Referee</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Cleaned Referee Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>138</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>League</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[League]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>League</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Cleaned Referee Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Season</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Season]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Season</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Cleaned Referee Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Matches</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Matches]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Matches</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Cleaned Referee Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Yellows</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Yellows]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Yellows</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Cleaned Referee Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>104</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Double Yellows</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Double Yellows]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Double Yellows</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Cleaned Referee Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reds</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Reds]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reds</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Cleaned Referee Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Booking Points</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Booking Points]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Booking Points</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Cleaned Referee Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>180</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Booking Points per Match</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Booking Points per Match]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Booking Points per Match</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Cleaned Referee Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>197</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Strictness%</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Strictness%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Strictness%</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Cleaned Referee Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>259</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' field='[none:Season:nk]' type='shape'>
+            <map to='circle'>
+              <bucket>&quot;22/23&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;24/25&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;23/24&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Season:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;22/23&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;24/25&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;23/24&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:League:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bundesliga&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Serie A&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Premier League&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ligue 1&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;La Liga&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Cleaned Referee Data.csv' id='Cleaned Referee Data.csv_95C3ACFC6AF041AE9AF3122B19436D59'>
+            <properties context=''>
+              <relation connection='textscan.1nd7ejq1k6j6oc178ss8c069jk79' name='Cleaned Referee Data.csv' table='[Cleaned Referee Data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='index' ordinal='1' />
+                  <column datatype='string' name='Referee' ordinal='2' />
+                  <column datatype='string' name='League' ordinal='3' />
+                  <column datatype='string' name='Season' ordinal='4' />
+                  <column datatype='integer' name='Number of Matches' ordinal='5' />
+                  <column datatype='integer' name='Yellows' ordinal='6' />
+                  <column datatype='integer' name='Double Yellows' ordinal='7' />
+                  <column datatype='integer' name='Reds' ordinal='8' />
+                  <column datatype='integer' name='Total Booking Points' ordinal='9' />
+                  <column datatype='real' name='Booking Points per Match' ordinal='10' />
+                  <column datatype='real' name='Strictness%' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Avg. Booking Points per League (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Booking Points per League</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Cleaned Referee Data' name='federated.0ey7qp108koo3210u172y19m2q1f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ey7qp108koo3210u172y19m2q1f'>
+            <column datatype='real' name='[Booking Points per Match]' role='measure' type='quantitative' />
+            <column datatype='string' name='[League]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Referee]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column-instance column='[Booking Points per Match]' derivation='Avg' name='[avg:Booking Points per Match:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[League]' derivation='None' name='[none:League:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Referee]' derivation='None' name='[none:Referee:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ey7qp108koo3210u172y19m2q1f].[none:Referee:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Abdelatif Kherradji&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Adrián Cordero Vega&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Alberto Santoro&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Alejandro Hernández Hernández&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Alejandro Muñiz Ruiz&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Alejandro Quintero González&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Alessandro Prontera&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Andre Marriner&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Andrea Colombo&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Andy Madley&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Anthony Taylor&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Antonio Giua&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Antonio Mateu Lahoz&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Antonio Rapuano&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Bastian Dankert&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Bastien Dechepy&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Benjamin Brand&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Benjamin Cortus&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Benoît Bastien&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Benoît Millot&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Carlos Del Cerro Grande&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;César Soto Grado&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Chris Kavanagh&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Christian Dingert&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Clément Turpin&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Craig Pawson&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Daniel Schlager&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Daniel Siebert&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Daniele Chiffi&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Daniele Doveri&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Daniele Orsato&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Darren Bond&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Darren England&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;David Coote&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Davide Ghersini&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Davide Massa&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Deniz Aytekin&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Dr. Felix Brych&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Dr. Matthias Jöllenbeck&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Eric Wattellier&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Ermanno Feliciani&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Fabio Maresca&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Federico Dionisi&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Federico La Penna&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Felix Zwayer&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Florent Batta&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Florian Badstübner&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Florian Exner&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Francesco Cosso&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Francesco Fourneau&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Francisco Hernández Maeso&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;François Letexier&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Frank Willenborg&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Gaël Angoula&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Giacomo Camplone&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Gianluca Aureliano&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Gianluca Manganiello&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Giovanni Ayroldi&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Graham Scott&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Guillermo Cuadra Fernández&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Hakim Ben El Hadj&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Harm Osmers&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Isidro Díaz de Mera&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Ivano Pezzuto&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Jarred Gillett&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Javier Alberola Rojas&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Javier Iglesias Villanueva&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Jérémie Pignard&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Jérémy Stinat&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Jérôme Brisard&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Jesús Gil Manzano&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Johan Hamel&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;John Brooks&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Jorge Figueroa Vázquez&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;José Munuera Montero&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;José Sánchez Martínez&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Joshua Smith&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Juan Luca Sacchi&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Juan Martínez Munuera&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Juan Pulido Santana&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Livio Marinelli&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Luca Massimi&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Luca Pairetto&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Luca Zufferli&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Manuel Volpi&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Marc Bollengier&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Marco Di Bello&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Marco Fritz&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Marco Guida&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Marco Piccinini&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Maria Caputi&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Mario Melero López&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Martin Petersen&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Massimiliano Irrati&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Mateo Busquets Ferrer&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Mathieu Vernice&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Matteo Marcenaro&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Matteo Marchetti&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Maurizio Mariani&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Michael Fabbri&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Michael Oliver&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Michael Salisbury&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Miguel Ortiz Arias&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Niccoló Baroni&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Pablo González Fuertes&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Paolo Valeri&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Paride Tremolada&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Patrick Ittrich&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Paul Tierney&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Peter Bankes&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Pierre Gaillouste&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Ricardo De Burgos Bengochea&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Robert Hartmann&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Robert Jones&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Robert Schröder&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Romain Lissorgue&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Rosario Abisso&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Ruddy Buquet&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Sam Barrott&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Samuel Allison&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Sascha Stegemann&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Simon Hooper&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Simone Sozza&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Sören Storks&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Stéphanie Frappart&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Stuart Attwell&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Sven Jablonski&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Thomas Bramall&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Thomas Léonard&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Tim Robinson&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Timo Gerach&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Tobias Reichel&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Tobias Stieler&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Tobias Welz&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Tony Harrington&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Valentín Pizarro Gómez&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Víctor García Verdura&quot;' />
+              <groupfilter function='member' level='[none:Referee:nk]' member='&quot;Willy Delajod&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ey7qp108koo3210u172y19m2q1f].[none:Season:nk]'>
+            <groupfilter function='level-members' level='[none:Season:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ey7qp108koo3210u172y19m2q1f].[none:Season:nk]</column>
+            <column>[federated.0ey7qp108koo3210u172y19m2q1f].[none:Referee:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ey7qp108koo3210u172y19m2q1f].[avg:Booking Points per Match:qk]' field-type='quantitative' max='105.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0ey7qp108koo3210u172y19m2q1f].[none:League:nk]' value='228' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0ey7qp108koo3210u172y19m2q1f].[avg:Booking Points per Match:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0ey7qp108koo3210u172y19m2q1f].[none:League:nk]' />
+              <lod column='[federated.0ey7qp108koo3210u172y19m2q1f].[none:Referee:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Referee:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0ey7qp108koo3210u172y19m2q1f].[none:Referee:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg. Booking Points per Match:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0ey7qp108koo3210u172y19m2q1f].[avg:Booking Points per Match:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.22988949716091156' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ey7qp108koo3210u172y19m2q1f].[avg:Booking Points per Match:qk]</rows>
+        <cols>([federated.0ey7qp108koo3210u172y19m2q1f].[none:League:nk] / [federated.0ey7qp108koo3210u172y19m2q1f].[none:Season:nk])</cols>
+      </table>
+      <simple-id uuid='{2F168E03-9B2B-4BD0-9BAC-23364C8F3841}' />
+    </worksheet>
+    <worksheet name='Referee Strictness per Season'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Referee Strictness per Season</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Cleaned Referee Data' name='federated.0ey7qp108koo3210u172y19m2q1f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ey7qp108koo3210u172y19m2q1f'>
+            <column datatype='string' name='[League]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Matches]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Referee]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Strictness%]' role='measure' type='quantitative' />
+            <column-instance column='[League]' derivation='Attribute' name='[attr:League:nk]' pivot='key' type='nominal' />
+            <column-instance column='[League]' derivation='None' name='[none:League:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Referee]' derivation='None' name='[none:Referee:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Matches]' derivation='Sum' name='[sum:Number of Matches:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Strictness%]' derivation='Sum' name='[sum:Strictness%:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ey7qp108koo3210u172y19m2q1f].[none:League:nk]'>
+            <groupfilter function='level-members' level='[none:League:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ey7qp108koo3210u172y19m2q1f].[none:Season:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Season:nk]' member='&quot;22/23&quot;' />
+              <groupfilter function='member' level='[none:Season:nk]' member='&quot;23/24&quot;' />
+              <groupfilter function='member' level='[none:Season:nk]' member='&quot;24/25&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0ey7qp108koo3210u172y19m2q1f].[none:Season:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;24/25&quot;</bucket>
+              <bucket>&quot;23/24&quot;</bucket>
+              <bucket>&quot;22/23&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0ey7qp108koo3210u172y19m2q1f].[none:Season:nk]</column>
+            <column>[federated.0ey7qp108koo3210u172y19m2q1f].[none:League:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0ey7qp108koo3210u172y19m2q1f].[sum:Strictness%:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0ey7qp108koo3210u172y19m2q1f].[none:Season:nk]' />
+              <lod column='[federated.0ey7qp108koo3210u172y19m2q1f].[none:Referee:nk]' />
+              <tooltip column='[federated.0ey7qp108koo3210u172y19m2q1f].[attr:League:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Referee:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0ey7qp108koo3210u172y19m2q1f].[none:Referee:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>League:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0ey7qp108koo3210u172y19m2q1f].[attr:League:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Season:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0ey7qp108koo3210u172y19m2q1f].[none:Season:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Strictness%:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0ey7qp108koo3210u172y19m2q1f].[sum:Strictness%:qk]>%]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.80160218477249146' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ey7qp108koo3210u172y19m2q1f].[sum:Strictness%:qk]</rows>
+        <cols>[federated.0ey7qp108koo3210u172y19m2q1f].[sum:Number of Matches:qk]</cols>
+      </table>
+      <simple-id uuid='{2FFC14E1-D71A-46A3-91A8-08D78C9C3D70}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Avg. Booking Points per League (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='124'>
+            <card pane-specification-id='0' param='[federated.0ey7qp108koo3210u172y19m2q1f].[none:League:nk]' type='color' />
+            <card param='[federated.0ey7qp108koo3210u172y19m2q1f].[none:Season:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ey7qp108koo3210u172y19m2q1f].[avg:Booking Points per Match:qk]</field>
+            <field>[federated.0ey7qp108koo3210u172y19m2q1f].[none:League:nk]</field>
+            <field>[federated.0ey7qp108koo3210u172y19m2q1f].[none:Referee:nk]</field>
+            <field>[federated.0ey7qp108koo3210u172y19m2q1f].[none:Season:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CBCAF220-2AA4-45C8-91D1-17BCDBE3C3CB}' />
+    </window>
+    <window class='worksheet' name='Referee Strictness per Season'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.0ey7qp108koo3210u172y19m2q1f].[none:Season:nk]' type='color' />
+            <card param='[federated.0ey7qp108koo3210u172y19m2q1f].[none:League:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ey7qp108koo3210u172y19m2q1f].[avg:Strictness%:qk]</field>
+            <field>[federated.0ey7qp108koo3210u172y19m2q1f].[none:League:nk]</field>
+            <field>[federated.0ey7qp108koo3210u172y19m2q1f].[none:Referee:nk]</field>
+            <field>[federated.0ey7qp108koo3210u172y19m2q1f].[none:Season:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1DFE0F42-5BD9-4547-B4B4-DA1E7AA9CE48}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Avg. Booking Points per League (2)' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nO29Z5Bk15WY+T2XtjKzsrz3pqu9QXcDaBgSJIYONABBQgNOcGKkEYOzIyl2
+      V1on7Y4UsxPakGa0K2pnNxTDWJGiHxL0sHQACA802ndXdVV1eZPlstJnvnxufxTQcJltXmaX
+      fV9ER3RXvzp5bt573j333nPOFSzLsnBw2KGIG62Ag8NGcssMIJ1O3yrRG4Kqqui6vtFqlJXt
+      1kd22nPLDEDTNNu/m4ytMDk1TTZ/jQFn6uTUD/6/nlfJ6wbpdMb25xdC13XK6S1ms9kP/tAy
+      yeZygLUug7OUPno/hpZD1U3AIJ3OXfd5y7JIJJNl+3y4ufbEVhaZmpnbnC7QfGSByoCPocHL
+      xOMJ1HSKbC7N5Pg4c0ur5LNJBi+cZGI+zsLsBPNLq6RiywyNThBfnmExkSOXU8kkolwaHCST
+      y3NleJDlWGqjm3aVsbFRANR0nEuDl1F1A4w8oxMzAORyObRcmsGLF4mnc8yMjzC7sMJmXbBl
+      V6aYi2uAQS6rkYguMjh0mWQyTS6vk4jHWZybYnYhCkBseZ7T5y9tmL4T07NUuAXkDdPgGmi5
+      NOPj47iDdUxPT1Pnc5P3SaQMH9LyIvFFjZ6eboanElwYncCUFdpqA0ieSkwAdCLzESzLpK1a
+      YmYljZpVmT5/kQ/dfXyDW/deUqkkucQywxMV7OuovvrzyPw8C0BHWyPTCxGMVIa5K/PU19+z
+      OTvtKjkic0uYokadT2V6dpFwQx3RmWmWkjpmZoK6+nsI1zZRvRjdMC3z2SQzc8LmnAEAFJeb
+      fC5LPh1ndHwaC4EKvx9ZlhBNjZHRcSxRxu/z0NbaSmVliMjkOBnj7XekAHqWKxMzZFMx0qqJ
+      uIlaq6YTXBwcZm5+AcXtxjTX3Lml+SnGp+cBUESTkdEr6LkUS8kciii+ZeCbEMtibHiQpdUU
+      IKLnkoxPR3C5ZSZHLhNNZPC6JJrb2pBYa+fk5CRzG2QE3mA1+w8cRLhV26CxWIzKykpbv2uZ
+      JqYFoiiAZWEBgiC89xnLQhCEq375239/93Ozk6NEIsv0HDxO0LX2zPvl3CjpdBqXy4WiKLZ+
+      //1YpokJiO/SWwDMd7VnJTLD1GyEho4+GqoCgIAgrj1XDkrpo/djWRamaSKKImAxeWWYxeU4
+      e287hkd8q1/e7ktRxDLNt9otrvVzGbiZ9lz9zt82gHQ6XdZFUSaTwefzlU3eRqOqKrIsI0nS
+      RqtSNrZbH9lpz1V30u/3l12hcr1dNgPlngE2C9upj+Dm27OJvGIHh/XHMQCHHY1jAA47GscA
+      HHY0jgE47Ghu2gDUdJznXnwZw7QYH77ImyffJJ5KcfrUm5wbHNm0R/XFMC2Lp14d4ZtPnSF+
+      AzEsWwEzvUTu+b8mf+EnZY1f2o7c9Km64qmgriqIhY5quNm3p4Hz54Zp7u0nuzCDalkopolp
+      mlsiejKRVllYTXGop4HXL83w4UMdBZ8zDANd120fpK0n+uVnEHs/hn75KYRsAsFVeIt7q/TR
+      jWKnPTdtAKIksTYGRHRdJZtK4fH7SGezqJqGLAhIkoQoisjy5o5aAagMStSE/Lw5EuGhewaK
+      6ixJErIsb4k2iX33kz/5DeTqLmRvsKjRbpU+ulHstOemQyGS0UVGJmYIVNVRF1CYj6bp6+5g
+      enwUJVBLU10YKO8x+2ZgOx6Ebbc+stOemzb/QFUdh6vqrv479FYAY3t3382KcnDYcJxdIIcd
+      jWMADjsaxwAcdjSOATjsaBwDcNjROAbgsKNxDMBhR+MYgMOOxjEAhx2NYwAOOxrHABx2NI4B
+      OOxo7MfCWiaDF86Rzqp07xpgbHgYyRPgwN7+shVucnC41ZRgAAZ5U6K1sZLB8yN07x4gE5ne
+      cgkxN8pWSoi5UbZbH61LQsxVRIX2lgZmpseoqa0mmUqj5vNbLiHmRtlKCTE3ynbrIzvtKWkN
+      oOYy+Kpa6e3txmMkqGnp2OSVix0c3ktJ47W+uf3q31s6ekpWxsFhvXF2gRx2NI4BOOxoHANw
+      2NE4BrANsSwTfe40ZnJho1XZ9DgGsA3RR36NuXCR/Gv/GUvfHtXubhWOAWxDBJcfK70MggCC
+      08XXwtm234bIHXchhjsRvGEEybXR6mxqHAPYpoih5o1WYUvgzI8OOxrHABx2NI4BOOxoHANw
+      2NGUsAg2uXjmNKqu09jaxczUBJK7gkP7B5yEGIctQwkGIGBZJqZhkIzHaevZ7STEbDG2Wx+t
+      b0KMqaOaLvq66xmbjoE7iaqqKFssIcY0LX7x0mUWY2m+8KHdhAPegs85CTGbn/VNiBFlejoa
+      mFs12HdwHwExS2NHD5JtgRtDMquSyKjcuaeV0yORjVbHYZ0pyQUKVddfvSGmsbWzPBqtM0Gf
+      m8aqCk6PRvjcXf0brY7DOrN95j+bCILA/Ue7N1oNhw3C2QZ12NE4BuCwo3EMwGFH4xhAmbAs
+      CzM2haVlN1oVh5tgxy+Cy4U+8ivMlVGsTBT3ff8KwUlE2RJcs5deev00uZy6Xrpsaaz0EsbC
+      RczELFjWRqvjcIMUNIBEMsUrJ8/y0yd+y7d/9EsMw1hvvbYclpZFGfgMgrcKcAygnFi6zup3
+      v0f0G9/ESKXKKrugAbjdLn79/Cu0NTfwJ3/4OSRpq53vrj9K/8cx5k4htx4Dwfm+yom+vILo
+      8+Hu7kabmCir7IJrgFg8yZ9+6SHiidS2ihW5lYihVjwf/pcbrca2RK6rRQoGMBJxfLffXl7Z
+      hX5YX7sW39DUUFfWD3NwsIMgilR85CO3RHbR17upJnnqmd+imXDXRz9FTYVySxRwcNhIChqA
+      ZZnEI6OEO4+wq9lPwFvAp7UMxkaGWZifobZrL9H5GUSXjyMH9zgJMQ5bhoIGYKhpXjs/zkpi
+      mNlBuPcTD1IXeF99GUGiq28XOc2kStYJ9O4m6yTEbCm2Wx+VLSFG9gS462A3w3oHjbkRkjn9
+      gwYApKMRPOEGvF6dhegqmqrSusUSYgBMy8KyLCSx+LGIkxCz+bHTnqJPVzTuYvHJp5gRK/hY
+      r6fgM4I7QHulH0kUqMlOI9f2bbmEGN0w+e6vz5HKanz2RD8tdcGNVslhHSn6yotOXqD7+Mc5
+      1lvDfKzwabDPX4EkrrkEtY2tRdMJNzNZVUM3TI7uauLKXHSj1XFYZ4oawKXBIX7/zM95bXSZ
+      hpB7PXVaVyq8Lm7rb2IpluHOva225Vimjj71CmZqsYzaOdxqihrA0TtOkIstsDA3zUpKW0+d
+      1hVBEDjQ08Cn7uhFke07cNr5x9DOP0bumX+JZTqhI+Umd/4CmddfxzLNssotagCWnmf3gcNI
+      mOhl/tDtiJVZwVgawkxG2OhYIHN1gtxv/g3q61/HsrZ+3+nLy+TOn0dfXkEdHimr7IIGYGgq
+      E8sqNeEQtx09So3fKbF9XWQ3Ss9HESvbYYNPQvSpVxDDnZjRMdgG+QliRQVmJoM+O4dcU11W
+      2QV3gcx8mjdPvono8dM/sPfqQtehOMqeh9DOfh/XwUdtX0phWRbG7CnMhQso+x9BUArvvl0X
+      UcFYOo+VS2yLCzJEj4fwl7+MZZmI7vKuRwt+O7IvzKc//QADXS288cJviWbKf1iiajrpbL7s
+      cjcK0VeF+44/R+44Yf+wTM+hnf4WlppEu/jTEpSR0CdfxkrM2ZexyRBcStkHPxQxADUe4W/+
+      +t/z0skLhGvrUco8A+TyOt948gzf/tU5ZpYSZZW9UVhalvyZ72MsDpYkx4xNo48/DyX47lYm
+      ivv2ryIEG8HYvhsY5aCgC+QONfAXf/lvr/673PkAWVVDkUUaqipYjmdoqd36h0/5U/8Vfex5
+      8me+h//LP0UQbZywigpSyxEQFcTqLtu6uPZ/EfXV/xdlz4PgDtiWs5mwNA3LLL8LVLCXBEHA
+      SC1yZVVmd2f5Q6LDAS937W8jnlLZ31Vfdvkbgp5H8IbX/G6bCJKM++5/jpVLIlbU2pZjro6D
+      oWNEziF3fxiErR3uYOZyxL7zXbAg+ODnyroQLr4Napn88off5Hs/+AGLifL66rph8vrgHKeG
+      50lkNj7n2DQtNL20vXvXkT9GrOrCc9+/Ki0jTFQQPKW9tY3lUeT2OyGfBWPrr7PMZArR50Np
+      aUZfXiqr7KIG4K4IM9DbyR3HT+B2lXcNsJrMMjy9QiyVY2hq2bac+ZUk33zqDCcv21/s6YbJ
+      t545y9cfP8X0Yty2HGPlCvr479f8d5tYhkbuqf+R9HceRp95w7YcZeABzFwMZe+DCIrPtpzN
+      glxbg3vvXqSqMO6+vrLKLmoAmcUrJDWBK5cvspgsvJCy3oqifPefG8GyQBYFZEks6czouTMT
+      fOJ4D69fmrUt4+1YoMN9jYzNxWzL0Ud/A7k42sWfg2lz10zLYibncR38EsbEy7Z1ESQXrj0P
+      ItXvsS1js+HZtxfvsWMI14jYtUNRaf7mfbSGRLJygO6aQkFuFmOXL3Dh4iWSiRivv3GSk6cv
+      3NB4rg556W+rIeR3s6fTvq97++4Wfvz7QQbaa2zLCPjcHN/dzGoyx517W2zLQZTXimKJJbg/
+      7gBy90fQx55D2fewfTnbDCufZ/Wb/5Xo1/8/jJj9WboQRVdHmcgQ8/kgFdlZ5uIqLZXvP5Qx
+      mJ9foSJUwcxMhI63EmJyloXrOgkxpmkhS2szwNuJJnZorQ3wlQcOAZSU2DHQVs1AWzVgFZVz
+      vYQYcd8/QMqsIrbdjmEJYFMfoW4PIgKGK4h5i5NVtkpCjL68Aj4fclUVuekp3BUDBZ8r6w0x
+      gqSwNDdFmgxPP/5zHvnCIwTeswMlUREK0NRYy0o0ydLSIrqav6GEmKVYGt2w2N1Zy+XpKMd3
+      l/DmXSeulxBjhRpR7vtfQHIj2JwFrHya3O/+EsETRADcR/9hCRpfn62SECM1NmC0tWJlMvh2
+      70Yosi1f1oQYb20P/+SrPdf4VYG9e3YTWY7Tv3sP8ZUIUnPjDSXEVAd9+DwKI9NRHrxn100p
+      vFkxZk+iD/8KwRPEdcc/sXcabFlgGoBgfx3B2mJaH/01YlU3Uu3Wv/RDEAT8d9xxS2QXXQOY
+      uVWuTM7ys8d+TEIt3Bmy20tLcwOiAOGaBoL+G4tdEUWBz5zo54/+YD9+z/YItDMXB5F778dK
+      r9g/xXX5UHZ/FjHYhNxjvwyIPvQECBLauR9ui2K9lmWRfuVVUr/9HVaZqxQWNYDsyjTPPf8C
+      VdVhFuMbv1e/2VH2fREzOo5y8B/YdoEEQcR9x3+D91P/Aana/q01QrgdY/YUyG4Qt345G2Np
+      CW1mBgRQhy6XVXbxNYA7wB1330e9kkTzbE4/MZ3N85s3xzjY20B7faVtOa8PzjK9mOCBO3tx
+      K/baKigeXAcesa3D2xhzZzAWL6LsfRhBtnfsLzcdQhAVhFAzgrQ5++5mECsrMVZW0CMRwocP
+      l1d2sf949dmnefa5Z/nNy2dwyeUPqZ1ZTDA4uYRZQiXln704xKWJZf7ul6dsy4gmsjx3ZgK/
+      R+F3p8ZtyykHVj6D+tLXMBMRtHN/b1uOPvY8+tiz5F/8Gpa+9U+CLXXNAxH9FRjJZFllFx3Z
+      93zyEVqrPHjcMuVOCIunczzx6jAXxhe5NGH/aDuT00hkcsSSOdsy/F6FdFbj2dPjdDSEbcsp
+      C6IEgoi5PIzgs3+2YRl5UPxv5eVsg0rVpokgyQguBcq8Big6P2rJCDVdh+hv8hMsVBmuBBRJ
+      QjdMYskcfo99H1WRJVbiWdwu+9O8ppu01Abob6thJZ6xLcfKxcmf/QFS0yGklqO2doEE2Y3n
+      k3+NlZxHrCu8130jyD0fwVwcRAh81rYbtZmQQiGCn/0MVl5Fbm4uq+yiI0f0VjN/+QUWr8hv
+      1QYtnxvk8yj8yScOoWp6SaVUdMOkp7mK+aj9adGtSIiiwKWJJT52zP7CM3/+MeTOe9DO/RCp
+      +YjtgDjRVwW+Ktt6wNpiejuFQcBahehbQcFRrWXinDx7nlQqRSwWQzfKP436PErJdYT2d9cT
+      iabY02E/ZFuWRA50N1AT8tFcQl6C3HYH+bPfRwi1bIs0xJ1CwZ5SfCHuuP12KgMVVARryu4C
+      wVpKZKrElMjx+VX+6eePkcvbPzRKZfOcvbJAW32IVy5M25Yj1e/Ge/9f4j76j7ZN/VBL1zES
+      yRsOcryVmDkVM2PfRS1G8XOApSuEuo+xt9nHXJnPAXJ5nb/9yet87bHXmFm0n0Ay0F7LU6+N
+      0lxrP37e61aQJYE3hmbpbrbveliWhbk6WdLBk2VZ5M9+n9zv/gozMW9fjp4nf+7vMebPlqRL
+      7Ic/IvHzn5M7a18OgL60VNLgNbNZFv/qr4j8b3+BvljewmOFy6ObOpdn04yefgX3bXdxvGA0
+      qH1Wk1kGJ5ZRFImx+VXb9TgrvC6CPjd1Yb9tXWRJ5MsfO4BlrZ1Q20Uf/AX6+AtgGXg++Tf2
+      DsMMFXNpGKnlKPr0q7j2PGhPl+GnENwhtAs/Qazpt11dQhBF5Lo6zLT9wZu7eIncuXOYqRSV
+      f/QlRO/NjyVjZQUQkKur0WZmkevKl6VYOCl+dQ7NV8+Jw7vo2b0XscxTelXQS0tdkIDXRU8J
+      b90nXx3h3NgC337mXEn6CIJQ0uCHta1HS89iqSVc4ibKWPkU+TPfRQzZL9Mo1vSTP/lfsLQM
+      yPZCTQRBIPT5h/AcPozvTvtxOFIoiBGNgiwj2Ay8E3w+BFnC0g3EigrbuhSioEaip4Irp35G
+      TjPhwgSffOhRGkIf/CLHhy+RzJt0dXUzOXoZpaKa3q7W65aFyuQ02upDNFUHWFhN0VRjz4WR
+      RIFYMlfy4I2spFhOZNjdUWvb2JU9DyFW9yJWttkOhUBXMRYHEUMtGPNnkVtusyXGmDuF56P/
+      Gm3oibXCWC57M6SgKMhVpZ2NmJnsWmErNY9lmrZKhgkuF1JNLYIiI/rLm+FW0ABc/ioe/fL1
+      Q3FjiTiKL0w2tkRlUzfZxRk0y0J+Kzus2PWqbkVCzeuMzUXZ01Fj+xrW6qAXQRAIBzy2ZaSy
+      eb7++JvUhf2sJrPcuadwaLb5Vo7DtT5HqN+HBSVcKysi+OvW1hH+WttyxK4Po578BmJVF6bk
+      Lnp4dK0+KhdaNIoWiawtqFUVy8YsYGoauBQErxcjn0csY3uKaqOnl3ns57/GxKKyoZOPf/gO
+      3vuitThw+Di5+BwXh5do7KrEet+pY7HdEI9L5h9+6hCGYeIp4RDLYs2HlyXR9s6LKIpYgJrX
+      Ua4h5+2f39IdHtmNsvch9OGnULrvA5ufZZnGWjK8nkNAuKacW75jlVfx7t9PfmZm7UTXzgGh
+      KIFhYOU1BEm6poxr/V86n+eNmSl219VTV7HmdRQdferqDG2H7qMxP8ZoJEYkA03vmUktpq4M
+      E0ur7D20h4nhIVyBalzC2he+5lcX3mSyLIsXzk4RS+V44M4+20awHMuQyubJqlrRz7oeAZ+b
+      f/rQcWKpLJ2Nxaf7t9tj93NuBEvLYs6fwXX4j9GHfonrwB/akqNP/B73/ofRhp5EMHIIRVyg
+      a/VRufDs3cfK3/4tSnMzcjBoK6dXDAUJf+lRLE1Dri5eEuV67fnt2AiVHi+/vHyJf3x0bV1T
+      dOT5m3Yz993vcFF3cd+H7qX2A66XSEfvO8ksA3v331hrgKVYhseev4QiSzTXBrmjiNtxPd72
+      /UtdA4QDHsIBm3U4y4nkQvCE0C8/ibL/i7bFyP2fQDv1baSGvVBCVQgzn8eIriLX19meKfJX
+      RhH9frTZWcx0Bilw84tYyzBI/fo3mLkcoYcetLWTBBB0u5lYjeJT3lnPFs8Jnh/CqOpmb5WL
+      2oZGlDLOlKq2dnDlViTSOfuHYR0NlQxOLdO6CSrLWdkY+VPfQmo5itR2u+2p3nXHn18N/rKL
+      6A3jPvHPbP8+vHUO8J3vIgWDyM1NtjOyLE1H8Hggk7GdKKQvLYEs4+poRx0dxbtvny0593b2
+      MJ9MUPeunaSi84XorSQ2e4XJycm13aAy0lQT4Eh/E5UVHo7tsh/cFE+r/Nlnb8Pr3vikj/zZ
+      72PGp1Ff+A9g2V9YCoK4aWL4LcNADIWwsvajbX3Hj+G77QiVjz6KFLT3opJrasidOUvyqadx
+      tbXZ1kUSRVpClbje9f0WNABdTTMRidHX20l9fX3Z8wHUvMHlqWUmF+JEE/ZPTrubwnz7V+fw
+      ujfBgJHda+mQgoDd+wEsy0KfenXtYot8CZGpWpb8yW+iT71qO4xBEASCD3wKS9Pw33O3bV0w
+      DPTlFcx4zLYu+uIi+tISRjxBfmLCvi4FKDiyRclFqMJPfXMrdZVesvnyzgDRZBa3InOgu57x
+      yKptOWPzq3zl00fIFslZXk9cBx5F7v84nj/4K/vnAFoG9ZX/Byu1SL6EhBht8BeIDXvQr/zO
+      9gUZlmWRfPwJsCzSL9kv0pV57TXiP3qMlf/8d5gJe2EvZi6HoCiIPh9mtrw5zoUNQFaoa6hn
+      5NwbjMylqPSX9w1bH/YTDniYWUqwt4Tiu7s7ann8lWFaS7ja1DBNvvHkGf6P77zIwqr9U1xB
+      8eDa/8XSqjAIAlZyDu3iz+xVl34Lqekw2uAvEdzBtbzgErDy+ZKqsRmxOKLbjZXPY+bsuVJK
+      SwtKSzOi349nl/0qIul8nufHr7CUeqefC37LWjbBE088STKjIuaXSGZ1vEr5qjcossQ/f2Rt
+      UVXKPvTezrqSDAhgNZkjns5x78F2Xrs0y2dO2BvARuQC+fM/RAy14jr6p/baJYhIDQcQvGHb
+      p7cAUk0vnnv+BcjeEhL0BSq/9CjazAyu3t4SdKnBiMcRKyoQffZ2pESXi5r//r+7qpddfjN6
+      mXgux+BihK8eP7Emu9CDijfIpx/4GB63D1l243GVf684k9OIJkufzhZW0+iGfRetKuClo6GS
+      0yMR7t5vf4Glz7yOa/8ja7ey2L7cQsBcnUCfeNG+GwUY82dQX/5b1Je+hmWzvpBlWcR//BMS
+      v3ic3Pnz9nVZXib08OdR2tttR4RahkHipz8j/oO/L8kFMrFQJOk9x7VFR7a6OkuwdQ899T5W
+      0uW9ZSSd0/jGU2f46e+HGJuzvwZ49vQEz52Z4FvP2A/XFUWBz929iz9/8GhJCTqufV9An3wF
+      edcD9hNiTA1ECbntdsy0/VxpIzqO1HJ0zf+3e0OMZZF98xSYBurFS7Z1cXV1kXzqaYzYKlKl
+      vcod+tISSBJKWyvq6KhtXbrC1cSyGTrD7wRgFu0pX8MuVi78mleuJGgNl/eQyDBMZEkk4HOR
+      LSGZJZPTqA35yGv2tx1N0+Kx5y7xn378Wkk7UoI7gPvYnyK3HLE/TSt+lP2PYFkmysBnbOsi
+      Nx9BfeFvAMv+GkAQkBvqMXM5pFr76Yj6wgIIAmY6Yzus+u3wZ21mFncJ7lgkmeQL+w6Rzr9z
+      9lTUAFIz52k78UU+fqCe8eXyrryDfjefOdHPod5GdpdQ2fnOva28cG6K222eJMPajtTITJTW
+      2iAvnp+yLaccCIKAa9/DeP/gf0essL+20S4/iee+v8DKxkG1ny/tP3ECS9PwHbFfi8dMp9cW
+      95kMlmbv0FMQRUKf/QyVj3wR0WP/ZXystY3TczMcbXnH1S1qABVNA6TGTzK4oNFaXf4wgaaa
+      AH2t1SUtap54dQSPS+ZHz9mfor0umeV4hmfPTFAdLG/iz0ah9H0C7fyPEKu77d8RZlmkX3iB
+      0IMPknzqadu6vH3HL7KM6NrYMphhr4/7e/tpq3wn5qvIPcFJfvCDx5BcXhKJFVKqgcdX3oXw
+      6ZF5oskcHzrQjiTZk/12SIVaghsligKdjZVUBjz4vdujTqkYbsf76f9YmhBBANMk9t3vEXjg
+      k7bF+I4fQ49EkBsbEW2uAcrFdGyVp0eGONbSxoHGtQiEgiMvF1+hdeAwPr+H+452sBArnBNs
+      mTqvvPgKmqFy/uxpBkcnbqgM03I8w3958gxPvzbKqRH7ua8fPthBhdfFJ47b9wu9boWPHeum
+      vtK/bS7ss0wDfeYNzFLuCbYsEETcuwcwovY3KgSPB++hQ7gHdpU026ujo+QuXMAqoUrb7yfG
+      iCQTPDMydPVnhRNiAjWo0YuIosLQXIbb+wovpGYnxhAVD7HlRapbesguzpC3LOTrJI9ouo4k
+      CrgVibym207KME2LVDaPWUJiR0bV+NUbV2isquDk0CxH+huLfNZae251+HA50EeewcxEsQaf
+      wHXP/4AgF3Zhr9VHlmliqjm0uXmEUMj295s7c5bYt76N4HJR+xf/q62zAH1hgfgvHkes8GNa
+      4N5d/IKMa+lpmiamZWGa74yXggYgeyr46Mc+BVA0fsMyNCJLK6wuRVkOufGHA+iGiQhX4+aL
+      DZb6cAWfv3eAaCLL0V3NtgfVb0+N84UP7eZbz5zl/tvs3auryBICArFUjl3tNUV1WY98gHIh
+      ekJYS0MgSoiSUvQk95rtEQSsfB5tahrvbYdtt9tcXcXd04MeiSDk87ZyeiWPBzQNK5VG8vuK
+      6nK9/qny+RlaXqQxELz63HXP2ycuncTTcoDG9+UEC5LCbcfvYCmyQLi+hrGhQVyVNSjvmuau
+      lV11sKcBVTNw2azGDPDR27r40fOXOLGvzfb06nEp/MknD5LOadSEir+dhLeSfLZCzR+l4wSi
+      J4QQaka8TlJ8sfZYlgWajv/EnRgrUdvt9h07Sn5sDN8dtyOFw7bkyFVVVH/lT9cSYq5TEeJa
+      8lezGY63tjO8vHT1ueunRFomlQs69R9IiVyjtmHNb+4b2HsjbQEgmVH5Tz9+HVkS+dzdu+hv
+      tXfxcU9zFf/zo3fZ+t1343UrmyKkulzo02+gjz0Hpo77nn+BINlsm0tBHbqM78SdtnWRgkGq
+      v/KPbf/+VTnh0gsXBz0eLi1GqPa+E2ZyzZTI1kMfpik/XiQl0j5ZVccli1cT0bcDlmVBLg4u
+      v/0BVy5dUgtINb0YkXNrVy3Z0UcQ8OzdC5aFq7Oz/EreJPmJCcxcDnd/v+3ZqDsCYqQAAA8o
+      SURBVDVUiSJJKO9ykwSriJNvqGleeOElNNHH7r5O6pqbbyorLBaLUXmNba9LE0vE0zmODTQj
+      2fQv07k8z52eYH93Pa11IVsybviz0mlcLheKUngw6ZMvo0+8CKKM+67/FmED64Napo4x8RJi
+      uB0x3FH0uev1kaXrmJkMYiCwoa6fHo2S/MXjiIEKPAcO4O4pXMT4uu2xLFL5PH6XgvhW/xS/
+      I0zPk85miS3P4grVlTUlEtbycGtCvpKKbv3k90O8MTTH//3j18uomT3M1Qnk1mOQS6xtIW4g
+      gigjd917zcF/PSzLQh0aIvWrX2OW+VKKm0V0uzHzKkYshugvzQ2R3jfeihqAoedR8zqVNQ14
+      yxwNuprM8tfff5mvP36Kc1cWbMvRdYOg313SLTPlQtn7eSw1hXLkj0uK5Nw0WBaZV17Fe/Qo
+      qWef21BVRL+f8B99idAXHkZpbLAt543ZaX5y8RxPXh58R3ahBy3LQnD56WiuZzkyS0Ytb0ZY
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Referee Strictness per Season' width='192'>
+      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
+      GXUiHBRALb+H0Il/Q04rjYwAIXcD6u2/h9nfQHCgDVtKeNH+5rEW2nqGWF0a5K514VFX6CGM
+      rpPIaaWRQCM5MYct93yaTf2N2Kq/NO3vda2YC90wGQ9oJLqmP/vtejFNQe3lflIS7ORnJM74
+      vtccAQz/EGmVd7NtRRbdnR2ML6QrhBCMvPhLBv7+H9H7oyfBaF1dDP3n84y9+26kV3YVF9It
+      rPRJdpxF0SHc9I3j3LplkoNc8URmuKd3rUa+ynNUmlizXP3iJEmiLD8Nq6pEPuC9p1vp9fh4
+      5VDDpNSMki0BJXvVpJDEp3atotM9whN3rpzkOy8Co5hjUfcCZCU8jXHXIlmjH4x1zWdQVzyE
+      Zf2zE0E5IMYHkWyJSM50hHdic2nCV0ZofiQ1OrKpyzZh3/0nWNdH3TYSqh8nUPcm+pibhOJN
+      E+8aAo3v8pWU9+ivi2a28514jj2HztD65t9GAmIkScJSfAf2zV9Fss08MZmmG/zH22f5+b5a
+      TtTH3pyaCfvPXaazf5Q3PryEZ8w/4+uvrQAhP+2Xmzl1yc39m0oY8C7cubRaaxuhllYsy/IZ
+      e+utSPnYm28RqK1j7M23MQbC0wVH1UpWfeFJVnz5s9jLozZ/JS2VwX/6LnJi0sfufz2kJdoZ
+      D2gkuWyR/QV/UCMr1YXdqk6bddkVcnNH6C0ygtF8PaZvEP+bf0jg3T/B6DgGhDeGtPXfpG5A
+      Qt74tcj1kj0Z264/wbLtd5CuRLsZISSrC8mWGAlTNDwtqPkbsd32dfT2ozHbZHGlkn3/fyHz
+      7t9EVsP3lCTBCrmJH3ruZLNaE6nb3etm+co1jPoN/IGZ52G9FsPeAElOG0/sWEF9e+wjrmbC
+      eEAjK8WF066i3UA27GsqgDU5l+ryZdx3/304c8opSl3A/JKqQuD8WcZefwmu6pWNsTG0ri70
+      gX5EKPwBBBsaCBx9Gf+BXxBqaY3WHRoi64/+G6Z3+hyine5RDpy7PCmJ7NO7VrOxIpcv3r82
+      0oM+sKWc/iEfm1fmk5ESe2c0dOo5LNVPo9W+EjmA2xxswug5hznQgNF5Agj3ij96/QgtjfW8
+      /MG5mPeUkvJRirah5K1DnphXK9mrMcd6CZ17AcuqaEDOeEBj/9k2ugeme36J8uXL+Wr2SXLL
+      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
+      T4fnAnIAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
